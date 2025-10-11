@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:id="@+id/main">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EstiloTexto"
+            />
+
+        <ImageView
+            android:id="@+id/minhaImagem"
+            android:src="@drawable/logo"
+            android:contentDescription="Imagem ilustrativa"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faça seu pedido!"
+            style="@style/EstiloTexto"
+            />
+
+
+        <EditText
+            android:id="@+id/etNomeCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionais"
+            style="@style/EstiloTexto"
+            />
+
+
+        <CheckBox
+            android:id="@+id/cbBacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bacon"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbQueijo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Queijo" />
+
+        <CheckBox
+            android:id="@+id/cbOnion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onion Rings" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantidade"
+            style="@style/EstiloTexto"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/btnSubtrair"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:backgroundTint="#4B0082"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvQuantidade"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnAdicionar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:backgroundTint="#4B0082"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvResumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumo do pedido"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrecoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 0"
+            style="@style/EstiloTexto"
+            />
+
+
+        <Button
+            android:id="@+id/btnFazerPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAZER PEDIDO"
+            android:gravity= "center"
+            style="@style/EstiloTexto"
+            />
+    </LinearLayout>
+</ScrollView>
