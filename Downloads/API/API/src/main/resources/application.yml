@@ -1,0 +1,10 @@
+spring:
+   application:
+     name: API
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/PersonalFile_api
+      username: root
+      password: root
+      flyway:
+         clean-disabled: false
