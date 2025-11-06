@@ -30,9 +30,11 @@ Este projeto tem como objetivo facilitar a rotina de profissionais da área de e
 
 
 ## 🛠 Tecnologias utilizadas
-
-- Gerador de PDF
-- Armazenamento local
+- JAVA
+- SpringBoot
+- Hibernate
+- Lombok
+- MySQL
 
 
 
