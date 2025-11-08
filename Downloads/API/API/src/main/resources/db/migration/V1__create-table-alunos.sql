@@ -1,3 +1,5 @@
+
+
 CREATE TABLE ALUNOS (
 
     id bigint not null auto_increment,
@@ -10,6 +12,7 @@ CREATE TABLE ALUNOS (
     estado varchar(100) not null,
     objetivo varchar(100) not null,
     telefone varchar (100),
+
 
     primary key (id)
 );

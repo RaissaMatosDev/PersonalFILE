@@ -1,5 +1,7 @@
 package med.voll.API.controller;
 
+import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import med.voll.API.alunos.Aluno;
 import med.voll.API.alunos.AlunoRepository;
 import med.voll.API.alunos.DadosCadastroAlunos;
@@ -19,8 +21,10 @@ public class AlunoController {
     @Autowired
     private AlunoRepository repository;
 
+
     @PostMapping
-    public void Cadastrar(@RequestBody DadosCadastroAlunos dados){
+    @Transactional
+    public void Cadastrar(@RequestBody @Valid DadosCadastroAlunos dados){
        repository.save(new Aluno(dados));
     }
 

@@ -92,6 +92,9 @@
 							<artifactId>lombok</artifactId>
 						</path>
 					</annotationProcessorPaths>
+					<source>22</source>
+					<target>22</target>
+					<compilerArgs>--enable-preview</compilerArgs>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -106,7 +109,21 @@
 					</excludes>
 				</configuration>
 			</plugin>
+				<plugin>
+					<groupId>org.flywaydb</groupId>
+					<artifactId>flyway-maven-plugin</artifactId>
+					<version>10.20.0</version>
+					<configuration>
+						<url>jdbc:mysql://localhost:3306/personalfile_api</url>
+						<user>root</user>
+						<password>root</password>
+					</configuration>
+				</plugin>
 		</plugins>
 	</build>
+
+	<pluginGroups>
+		<pluginGroup>org.flywaydb</pluginGroup>
+	</pluginGroups>
 
 </project>
